@@ -1,0 +1,326 @@
+.template-index {
+    >.top-bar {
+        padding: 15px 0;
+        background: $color__i-dark-yellow; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, $color__i-dark-yellow , $color__i-medium-yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
+    }
+    >.row-1 {
+        >.wrapper {
+            padding: 10px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 2% 0;
+            }
+            >.col-1 {
+                text-align: center;
+                @media screen and (min-width: $tabwidth){
+                    float: left;
+                    width: 30%;
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                .name-with-certs {
+                    font-size: 16px;
+                    margin: 15px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 25px;
+                    }
+
+                }
+                .email {
+                    font-size: 16px;
+                }
+                .phone {
+                    font-size: 16px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 25px;
+                    }
+
+                }
+            }
+            >.col-2 {
+                text-align: center;
+                @media screen and (min-width: $tabwidth){
+                    width: 70%;
+                    float: left;
+                }
+                header {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 8% 0 0 0;
+                    }
+                    h1 {
+                        margin: 0;
+                        font-size: 25px;
+                        font-weight: 300;
+                        color: $color__i-dark-yellow;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 60px;
+                        }
+                    }
+                    .spacer {
+                        margin: 0 auto;
+                        width: 200px;
+                        border: 1px solid darkgrey;
+                    }
+                    h2 {
+                        margin: 10px 0 0 0;
+                        font-size: 20px;
+                        font-weight: 300;
+                        color: $color__i-dark-yellow;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        hr {
+            clear: both;
+            background-color: $color__i-dark-yellow;
+            margin: 0 0 5px 0;
+        }
+    }
+    >.row-2 {
+        background-color: $color__i-yellow;
+        >.wrapper {
+            padding: 20px 0;
+            text-align: center;
+            @media screen and (min-width: $tabwidth){
+                padding: 4% 0 3% 0;
+            }
+            header {
+                h2 {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 35px;
+                    }
+                }
+            }
+            .subtitle {
+                font-size: 16px;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 25px;
+                }
+
+            }
+            .copy {
+                font-size: 16px;
+                text-transform: uppercase;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 25px;
+                }
+
+            }
+        }
+    }
+    >.row-3 {
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 3% 0;
+            }
+            >.col-1, >.col-2 {
+                @media screen and (min-width: $tabwidth){
+                    float: left;
+                    width: 50%;
+                }
+                header {
+                    h2 {
+                        margin: 0;
+                        font-size: 25px;
+                        color: $color__i-dark-yellow;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 60px;
+                        }
+                    }
+                }
+                .copy {
+                    font-size: 18;
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 20px;
+                    }
+                }
+            }
+            >.col-1 {
+                @media screen and (min-width: $tabwidth){
+                    padding: 0 2% 0 0;
+                }
+            }
+            >.col-2 {
+                @media screen and (min-width: $tabwidth){
+                    padding: 0 0 0 8%;
+                }
+            }
+        }
+        hr {
+            clear: both;
+            background-color: $color__i-yellow;
+            margin: 0 0 5px 0;
+        }
+    }
+    >.row-4 {
+        background-color: $color__i-yellow;
+        padding: 0 0 5px 0;
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 5% 0;
+            }
+            >.row-1 {
+                text-align: center;
+                header {
+                    h2 {
+                        margin: 0;
+                        font-size: 25px;
+                        color: $color__i-dark-yellow;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+            >.row-2 {
+                margin: 20px 0 0 0;
+                @media screen and (min-width: $tabwidth){
+                    margin: 6% 0 0 0;
+                }
+                .client {
+                    margin: 0 0 20px 0;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        width: 50%;
+                        margin: 0 0 5% 0;
+                    }
+                    &:nth-child(odd){
+                        @media screen and (min-width: $tabwidth){
+                            padding: 0 4% 0 0;
+                        }
+                    }
+                    &:nth-child(even){
+                        @media screen and (min-width: $tabwidth){
+                            padding: 0 0 0 4%;
+                        }
+                    }
+                    header {
+                        h3 {
+                            font-size: 18;
+                            margin: 0;
+                            @media screen and (min-width: $tabwidth){
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .copy {
+                        font-size: 18;
+                        margin: 15px 0 0 0;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+        hr {
+            clear: both;
+            background-color: $color__i-dark-yellow;
+            margin: 0;
+        }
+    }
+    >.row-5 {
+        background: $color__i-dark-yellow; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, $color__i-dark-yellow , $color__i-medium-yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 4% 0 5% 0;
+            }
+
+            >.row-1 {
+                header {
+                    h2 {
+                        margin: 0;
+                    }
+                }
+            }
+            >.row-2 {
+                >.col-1, >.col-2 {
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        width: 50%;
+                    }
+                    .testimonial {
+
+                    }
+                }
+                >.col-1 {
+                    @media screen and (min-width: $tabwidth){
+                        padding: 0 4% 0 0;
+                    }
+                }
+                >.col-2 {
+                    @media screen and (min-width: $tabwidth){
+                        padding: 0 0 0 4%;
+                    }
+                }
+            }
+        }
+    }
+    >.row-6 {
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 3% 0;
+            }
+
+            header {
+                h2 {
+                    margin: 0;
+                }
+            }
+            .phone {
+
+            }
+            .copy {
+
+            }
+        }
+    }
+    >.row-7 {
+        background: $color__i-dark-yellow; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, $color__i-dark-yellow , $color__i-medium-yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
+        >.wrapper {
+            padding: 20px 0;
+            @media screen and (min-width: $tabwidth){
+                padding: 3% 0 12% 0;
+            }
+            >.row-1 {
+                header {
+                    h2 {
+                        margin: 0;
+                    }
+                }
+            }
+            >.row-2 {
+                >.col-1, >.col-2 {
+
+                }
+            }
+        }
+    }
+}

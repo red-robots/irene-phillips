@@ -16,7 +16,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*//*!
+*/@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,700");/*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:#404040;font-family:"Rubik",sans-serif;font-size:16px;font-size:1rem;line-height:1.6}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -720,8 +720,8 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-.cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
-@media screen and (min-width:900px){.cap{padding-right:13% !important;padding-left:13% !important}
+.cap{max-width:1200px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
+@media screen and (min-width:900px){.cap{padding-right:8% !important;padding-left:8% !important}
 }.clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:14px;color:#404040}
 @media screen and (min-width:600px){.copy{font-size:16px}
@@ -741,6 +741,77 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li a,.copy ol li a{cursor:pointer}
 .copy ul li a:hover,.copy ol li a:hover{color:#404040}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
+.template-index>.top-bar{padding:15px 0;background:#b2832b;background:-webkit-linear-gradient(left,#b2832b,#eeba19);background:linear-gradient(to right,#b2832b,#eeba19)}
+.template-index>.row-1>.wrapper{padding:10px 0}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper{padding:2% 0}
+}.template-index>.row-1>.wrapper>.col-1{text-align:center}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-1{float:left;width:30%}
+}.template-index>.row-1>.wrapper>.col-1 img{width:100%;display:block}
+.template-index>.row-1>.wrapper>.col-1 .name-with-certs{font-size:16px;margin:15px 0 0 0}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-1 .name-with-certs{font-size:25px}
+}.template-index>.row-1>.wrapper>.col-1 .email{font-size:16px}
+.template-index>.row-1>.wrapper>.col-1 .phone{font-size:16px}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-1 .phone{font-size:25px}
+}.template-index>.row-1>.wrapper>.col-2{text-align:center}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-2{width:70%;float:left}
+}.template-index>.row-1>.wrapper>.col-2 header{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-2 header{margin:8% 0 0 0}
+}.template-index>.row-1>.wrapper>.col-2 header h1{margin:0;font-size:25px;font-weight:300;color:#b2832b}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-2 header h1{font-size:60px}
+}.template-index>.row-1>.wrapper>.col-2 header .spacer{margin:0 auto;width:200px;border:1px solid darkgrey}
+.template-index>.row-1>.wrapper>.col-2 header h2{margin:10px 0 0 0;font-size:20px;font-weight:300;color:#b2832b}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-2 header h2{font-size:35px}
+}.template-index>.row-1 hr{clear:both;background-color:#b2832b;margin:0 0 5px 0}
+.template-index>.row-2{background-color:#fedc71}
+.template-index>.row-2>.wrapper{padding:20px 0;text-align:center}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper{padding:4% 0 3% 0}
+}.template-index>.row-2>.wrapper header h2{margin:0;font-weight:500;font-size:20px;line-height:1.2}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper header h2{font-size:35px}
+}.template-index>.row-2>.wrapper .subtitle{font-size:16px}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper .subtitle{font-size:25px}
+}.template-index>.row-2>.wrapper .copy{font-size:16px;text-transform:uppercase}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper .copy{font-size:25px}
+}.template-index>.row-3>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-index>.row-3>.wrapper{padding:3% 0}
+}@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.col-1,.template-index>.row-3>.wrapper>.col-2{float:left;width:50%}
+}.template-index>.row-3>.wrapper>.col-1 header h2,.template-index>.row-3>.wrapper>.col-2 header h2{margin:0;font-size:25px;color:#b2832b}
+@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.col-1 header h2,.template-index>.row-3>.wrapper>.col-2 header h2{font-size:60px}
+}.template-index>.row-3>.wrapper>.col-1 .copy,.template-index>.row-3>.wrapper>.col-2 .copy{font-size:18;margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.col-1 .copy,.template-index>.row-3>.wrapper>.col-2 .copy{font-size:20px}
+}@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.col-1{padding:0 2% 0 0}
+}@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.col-2{padding:0 0 0 8%}
+}.template-index>.row-3 hr{clear:both;background-color:#fedc71;margin:0 0 5px 0}
+.template-index>.row-4{background-color:#fedc71;padding:0 0 5px 0}
+.template-index>.row-4>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-index>.row-4>.wrapper{padding:5% 0}
+}.template-index>.row-4>.wrapper>.row-1{text-align:center}
+.template-index>.row-4>.wrapper>.row-1 header h2{margin:0;font-size:25px;color:#b2832b}
+@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-1 header h2{font-size:60px}
+}.template-index>.row-4>.wrapper>.row-2{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-2{margin:6% 0 0 0}
+}.template-index>.row-4>.wrapper>.row-2 .client{margin:0 0 20px 0}
+@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-2 .client{float:left;width:50%;margin:0 0 5% 0}
+}@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-2 .client:nth-child(odd){padding:0 4% 0 0}
+}@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-2 .client:nth-child(even){padding:0 0 0 4%}
+}.template-index>.row-4>.wrapper>.row-2 .client header h3{font-size:18;margin:0}
+@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-2 .client header h3{font-size:25px}
+}.template-index>.row-4>.wrapper>.row-2 .client .copy{font-size:18;margin:15px 0 0 0}
+@media screen and (min-width:600px){.template-index>.row-4>.wrapper>.row-2 .client .copy{font-size:20px}
+}.template-index>.row-4 hr{clear:both;background-color:#b2832b;margin:0}
+.template-index>.row-5{background:#b2832b;background:-webkit-linear-gradient(left,#b2832b,#eeba19);background:linear-gradient(to right,#b2832b,#eeba19)}
+.template-index>.row-5>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-index>.row-5>.wrapper{padding:4% 0 5% 0}
+}.template-index>.row-5>.wrapper>.row-1 header h2{margin:0}
+@media screen and (min-width:600px){.template-index>.row-5>.wrapper>.row-2>.col-1,.template-index>.row-5>.wrapper>.row-2>.col-2{float:left;width:50%}
+}@media screen and (min-width:600px){.template-index>.row-5>.wrapper>.row-2>.col-1{padding:0 4% 0 0}
+}@media screen and (min-width:600px){.template-index>.row-5>.wrapper>.row-2>.col-2{padding:0 0 0 4%}
+}.template-index>.row-6>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-index>.row-6>.wrapper{padding:3% 0}
+}.template-index>.row-6>.wrapper header h2{margin:0}
+.template-index>.row-7{background:#b2832b;background:-webkit-linear-gradient(left,#b2832b,#eeba19);background:linear-gradient(to right,#b2832b,#eeba19)}
+.template-index>.row-7>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-index>.row-7>.wrapper{padding:3% 0 12% 0}
+}.template-index>.row-7>.wrapper>.row-1 header h2{margin:0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
