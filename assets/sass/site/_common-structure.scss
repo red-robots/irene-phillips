@@ -14,8 +14,11 @@
 	  content: "";
 	  display: block;
 	}
-  }
-  .copy {
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font__headings;
+}
+.copy {
 	font-size: 14px;
 	color: $color__text-main;
 	@media screen and (min-width: $tabwidth){
