@@ -17,7 +17,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php $post = get_post(6);
 			/* Start the Loop */
-			if ( $post ) : setup_postdata();
+			if ( $post ) : 
+				setup_postdata($post);
 				get_template_part( 'template-parts/content', "index" );
 			endif; ?>
 		</main><!-- #main -->
