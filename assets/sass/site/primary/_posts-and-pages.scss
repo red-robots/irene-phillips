@@ -11,13 +11,13 @@
         >.wrapper {
             padding: 10px 0;
             @media screen and (min-width: $tabwidth){
-                padding: 2% 0;
+                padding: 1.5% 0;
             }
             >.col-1 {
                 text-align: center;
                 @media screen and (min-width: $tabwidth){
                     float: left;
-                    width: 30%;
+                    width: 25%;
                 }
                 img {
                     width: 100%;
@@ -45,7 +45,7 @@
             >.col-2 {
                 text-align: center;
                 @media screen and (min-width: $tabwidth){
-                    width: 70%;
+                    width: 75%;
                     float: left;
                 }
                 header {
@@ -56,7 +56,7 @@
                     h1 {
                         margin: 0;
                         font-size: 25px;
-                        font-weight: 300;
+                        font-weight: 500;
                         color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
                             font-size: 60px;
@@ -70,7 +70,7 @@
                     h2 {
                         margin: 10px 0 0 0;
                         font-size: 20px;
-                        font-weight: 300;
+                        font-weight: 500;
                         color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
                             font-size: 35px;
@@ -91,7 +91,7 @@
             padding: 20px 0;
             text-align: center;
             @media screen and (min-width: $tabwidth){
-                padding: 4% 0 3% 0;
+                padding: 3% 0;
             }
             header {
                 h2 {
@@ -125,7 +125,7 @@
         >.wrapper {
             padding: 20px 0;
             @media screen and (min-width: $tabwidth){
-                padding: 3% 0;
+                padding: 2% 0 3% 0;
             }
             >.col-1, >.col-2 {
                 @media screen and (min-width: $tabwidth){
@@ -135,6 +135,7 @@
                 header {
                     h2 {
                         margin: 0;
+                        font-weight: 500;
                         font-size: 25px;
                         color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
@@ -173,7 +174,7 @@
         >.wrapper {
             padding: 20px 0;
             @media screen and (min-width: $tabwidth){
-                padding: 5% 0;
+                padding: 5% 0 4% 0;
             }
             >.row-1 {
                 text-align: center;
@@ -181,6 +182,7 @@
                     h2 {
                         margin: 0;
                         font-size: 25px;
+                        font-weight: 500;
                         color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
                             font-size: 60px;
@@ -213,6 +215,7 @@
                     header {
                         h3 {
                             font-size: 18;
+                            font-weight: 500;
                             margin: 0;
                             @media screen and (min-width: $tabwidth){
                                 font-size: 25px;
@@ -243,26 +246,44 @@
         background: -moz-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Firefox 3.6 to 15 */
         background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
         >.wrapper {
+            color: white;
             padding: 20px 0;
             @media screen and (min-width: $tabwidth){
-                padding: 4% 0 5% 0;
+                padding: 2% 0 6% 0;
             }
 
             >.row-1 {
+                text-align: center;
                 header {
                     h2 {
                         margin: 0;
+                        font-weight: 500;
+                        font-size: 25px;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 50px;
+                        }
                     }
                 }
             }
             >.row-2 {
+                margin: 0;
+                @media screen and (min-width: $tabwidth){
+                    margin: calc(4% - 40px) 0 0 0;
+                }
                 >.col-1, >.col-2 {
                     @media screen and (min-width: $tabwidth){
                         float: left;
                         width: 50%;
                     }
                     .testimonial {
-
+                        margin: 20px 0 0 0;
+                        font-style: italic;
+                        font-size: 18;
+                        color: white;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 20px;
+                            margin: 30px 0 0 0;
+                        }
                     }
                 }
                 >.col-1 {
@@ -281,20 +302,43 @@
     >.row-6 {
         >.wrapper {
             padding: 20px 0;
+            text-align: center;
+            color: $color__i-dark-yellow;
             @media screen and (min-width: $tabwidth){
-                padding: 3% 0;
+                padding: 2% 0 3% 0;
             }
-
             header {
                 h2 {
                     margin: 0;
+                    font-weight: 500;
+                    font-size: 25px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 50px;
+                    }
                 }
             }
             .phone {
-
+                margin: 20px 0 0 0;
+                background-color: $color__i-dark-yellow;
+                padding: 10px 20px;
+                display: inline-block;
+                font-size: 25px;
+                color: white;
+                line-height: 1;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 50px;
+                    margin: 30px 0 0 0;
+                    padding: 20px 25px;
+                }
             }
             .copy {
-
+                margin: 20px 0 0 0;
+                color: $color__i-dark-yellow;
+                font-size: 18;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 20px;
+                    margin: 30px 0 0 0;
+                }
             }
         }
     }
@@ -306,19 +350,48 @@
         background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
         >.wrapper {
             padding: 20px 0;
+            color: black;
             @media screen and (min-width: $tabwidth){
-                padding: 3% 0 12% 0;
+                padding: 2% 0 12% 0;
             }
             >.row-1 {
+                text-align: center;
                 header {
                     h2 {
                         margin: 0;
+                        font-weight: 500;
+                        font-size: 20px;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 35px;
+                        }
                     }
                 }
             }
             >.row-2 {
+                margin: 20px 0 0 0;
+                @media screen and (min-width: $tabwidth){
+                    margin: 30px 0 0 0;
+                }
                 >.col-1, >.col-2 {
-
+                    color: black;
+                    font-size: 18;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        font-size: 20px;
+                        width: 50%;
+                    }
+                }
+                >.col-1 {
+                    @media screen and (min-width: $tabwidth){
+                        padding: 0 4% 0 0;
+                    }
+                }
+                >.col-2 {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        padding: 0 0 0 4%;
+                        margin: 0;
+                    }
                 }
             }
         }

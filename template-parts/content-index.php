@@ -148,7 +148,7 @@
                         <?php for($i = 0;$i<count($testimonials);$i+=2):
                             $testimonial = $testimonials[$i];
                             if($testimonial['copy']):?>
-                                <div class="testimonial">
+                                <div class="testimonial copy">
                                     <?php echo $testimonial['copy'];?>
                                 </div><!--.testimonial-->
                             <?php endif;?>
@@ -158,7 +158,7 @@
                         <?php for($i = 1;$i<count($testimonials);$i+=2):
                             $testimonial = $testimonials[$i];
                             if($testimonial['copy']):?>
-                                <div class="testimonial">
+                                <div class="testimonial copy">
                                     <?php echo $testimonial['copy'];?>
                                 </div><!--.testimonial-->
                             <?php endif;?>
@@ -198,12 +198,12 @@
             <div class="row-2 clear-bottom">
                 <?php $row_7_col_1 = get_field("row_7_col_1");
                 $row_7_col_2 = get_field("row_7_col_2");?>
-                <div class="col-1"> 
+                <div class="col-1 copy"> 
                     <?php if($row_7_col_1):?>
                         <?php echo $row_7_col_1;?>
                     <?php endif;?>
                 </div><!--.col-1-->
-                <div class="col-2"> 
+                <div class="col-2 copy"> 
                     <?php if($row_7_col_2):?>
                         <?php echo $row_7_col_2;?>
                     <?php endif;?>
