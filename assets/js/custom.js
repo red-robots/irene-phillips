@@ -53,27 +53,6 @@ jQuery(document).ready(function ($) {
  		 });
 	});
 
-	/*
-	*
-	*	Smooth Scroll to Anchor
-	*
-	------------------------------------*/
-	 $('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-	    }, 500);
-	    return false;
-	});
-
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
-	
 	
 	/*
 	*
@@ -88,5 +67,14 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	new WOW().init();
+
+	function calc(){
+		var weight = Number($('#weight').val());
+		var height_inches = Number($('#height-inches').val());
+		var height_feet = Number($('#height-feet').val());
+		console.log(height_inches+12*height_feet);
+		$('#bmi-result').text((weight/((height_inches+12*height_feet)*(height_inches+12*height_feet))*703).toFixed(2));
+	}
+	$('#weight, #height-feet, #height-inches').on('input',calc);
 
 });// END #####################################    END

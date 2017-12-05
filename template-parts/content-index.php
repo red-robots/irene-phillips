@@ -68,7 +68,18 @@
                     <?php echo $row_2_subtitle;?> 
                 </div><!--.subtitle-->
             <?php endif;?>
-            <!--bmi-calculator-->
+            <div id="bmi">
+                <div class="weight">
+                    <label>Weight (lb):</label><input id="weight" type="number" min="1" max="1000" placeholder="" name="weight">
+                </div><!--.weight-->
+                <div class="height">
+                    <label>Height (ft):</label><input id="height-feet" type="number" min="1" max="7" placeholder="" name="height-feet">
+                    <label>Height (in):</label><input id="height-inches" type="number" min="0" max="11" placeholder="" name="height-inches">
+                </div><!--.height-->
+                <div class="result">
+                    BMI:&nbsp;<span id="bmi-result"></span>
+                </div><!--.result-->
+            </div><!--#bmi-->
             <?php if($row_2_copy):?>
                 <div class="copy">
                     <?php echo $row_2_copy;?>

@@ -111,6 +111,17 @@
                 }
 
             }
+            #bmi {
+                .weight, .height, .result {
+                    margin: 20px 0;
+                    label {
+                        margin: 0 10px 0 0;
+                    }
+                    input {
+                        margin: 0 10px 0 0;
+                    }
+                }
+            }
             .copy {
                 font-size: 16px;
                 text-transform: uppercase;
