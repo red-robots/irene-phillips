@@ -58,6 +58,7 @@
     <section class="row-2">
         <div class="wrapper cap">
             <?php $row_2_title = get_field("row_2_title");
+            $row_2_bmi_title = get_field("row_2_bmi_title");
             $row_2_subtitle = get_field("row_2_subtitle");
             $row_2_copy = get_field("row_2_copy");
             if($row_2_title):?> 
@@ -69,6 +70,11 @@
                 </div><!--.subtitle-->
             <?php endif;?>
             <div id="bmi">
+                <?php if($row_2_bmi_title):?>
+                    <header>
+                        <h2><?php echo $row_2_bmi_title;?></h2>
+                    </header>
+                <?php endif;?>
                 <div class="weight">
                     <label>Weight (lb):</label><input id="weight" type="number" min="1" max="1000" placeholder="" name="weight">
                 </div><!--.weight-->
@@ -186,11 +192,6 @@
             if($row_6_title):?>
                 <header><h2><?php echo $row_6_title;?></h2></header>
             <?php endif;
-            if($phone):?>
-                <div class="phone">
-                    <?php echo $phone;?>
-                </div><!--.phone-->
-            <?php endif;
             if($row_6_copy):?>
                 <div class="copy">
                     <?php echo $row_6_copy;?>
@@ -198,28 +199,30 @@
             <?php endif;?>
         </div><!--.wrapper.cap-->
     </section><!--.row-6-->
-    <section class="row-7">
-        <div class="wrapper cap">
-            <?php $row_7_title = get_field("row_7_title");?>
-            <div class="row-1">
-                <?php if($row_7_title):?>
-                    <header><h2><?php echo $row_7_title;?></h2></header>
-                <?php endif;?>
-            </div><!--.row-1-->
-            <div class="row-2 clear-bottom">
-                <?php $row_7_col_1 = get_field("row_7_col_1");
-                $row_7_col_2 = get_field("row_7_col_2");?>
-                <div class="col-1 copy"> 
-                    <?php if($row_7_col_1):?>
-                        <?php echo $row_7_col_1;?>
+    <?php $row_7_title = get_field("row_7_title");?>
+    <?php $row_7_col_1 = get_field("row_7_col_1");
+    $row_7_col_2 = get_field("row_7_col_2");
+    if($row_7_title||$row_7_col_1||$row_7_col_2):?>
+        <section class="row-7">
+            <div class="wrapper cap">
+                <div class="row-1">
+                    <?php if($row_7_title):?>
+                        <header><h2><?php echo $row_7_title;?></h2></header>
                     <?php endif;?>
-                </div><!--.col-1-->
-                <div class="col-2 copy"> 
-                    <?php if($row_7_col_2):?>
-                        <?php echo $row_7_col_2;?>
-                    <?php endif;?>
-                </div><!--.col-2-->
-            </div><!--.row-2-->
-        </div><!--.wrapper.cap-->
-    </section><!--.row-7-->
+                </div><!--.row-1-->
+                <div class="row-2 clear-bottom">
+                    <div class="col-1 copy"> 
+                        <?php if($row_7_col_1):?>
+                            <?php echo $row_7_col_1;?>
+                        <?php endif;?>
+                    </div><!--.col-1-->
+                    <div class="col-2 copy"> 
+                        <?php if($row_7_col_2):?>
+                            <?php echo $row_7_col_2;?>
+                        <?php endif;?>
+                    </div><!--.col-2-->
+                </div><!--.row-2-->
+            </div><!--.wrapper.cap-->
+        </section><!--.row-7-->
+    <?php endif;?>
 </article><!-- #post-## -->

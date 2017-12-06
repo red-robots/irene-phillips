@@ -112,8 +112,30 @@
 
             }
             #bmi {
+                margin: 20px 0;
+                border: 2px solid $color__i-dark-yellow;
+                display: inline-block;
+                padding: 20px;
+                @media screen and (min-width: $tabwidth){
+                    margin: 30px 0;
+                }
+                header {
+                    h2 {
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 1.2;
+                        @media screen and (min-width: $tabwidth){
+                            font-size: 35px;
+                        }
+                    }
+                }
                 .weight, .height, .result {
                     margin: 20px 0;
+                    font-size: 16px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 25px;
+                    }
                     label {
                         margin: 0 10px 0 0;
                     }
@@ -251,13 +273,8 @@
         }
     }
     >.row-5 {
-        background: $color__i-dark-yellow; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(left, $color__i-dark-yellow , $color__i-medium-yellow); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
         >.wrapper {
-            color: white;
+            color: $color__i-dark-yellow;
             padding: 20px 0;
             @media screen and (min-width: $tabwidth){
                 padding: 2% 0 6% 0;
@@ -290,7 +307,7 @@
                         margin: 20px 0 0 0;
                         font-style: italic;
                         font-size: 18;
-                        color: white;
+                        color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
                             font-size: 20px;
                             margin: 30px 0 0 0;
@@ -311,10 +328,16 @@
         }
     }
     >.row-6 {
+        background: $color__i-dark-yellow; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, $color__i-dark-yellow , $color__i-medium-yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, $color__i-dark-yellow, $color__i-medium-yellow); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, $color__i-dark-yellow, $color__i-medium-yellow); /* Standard syntax */
+        
         >.wrapper {
             padding: 20px 0;
             text-align: center;
-            color: $color__i-dark-yellow;
+            color: white;
             @media screen and (min-width: $tabwidth){
                 padding: 2% 0 3% 0;
             }
@@ -330,7 +353,6 @@
             }
             .phone {
                 margin: 20px 0 0 0;
-                background-color: $color__i-dark-yellow;
                 padding: 10px 20px;
                 display: inline-block;
                 font-size: 25px;
@@ -344,11 +366,18 @@
             }
             .copy {
                 margin: 20px 0 0 0;
-                color: $color__i-dark-yellow;
+                color: white;
                 font-size: 18;
                 @media screen and (min-width: $tabwidth){
                     font-size: 20px;
                     margin: 30px 0 0 0;
+                }
+                a {
+                    color: white;
+                    &:hover {
+                        color: white;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
