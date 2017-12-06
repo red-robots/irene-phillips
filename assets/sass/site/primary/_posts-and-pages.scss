@@ -138,9 +138,21 @@
                     }
                     label {
                         margin: 0 10px 0 0;
+                        display: block;
+                        width: 100%;
+                        @media screen and (min-width: $tabwidth){
+                            display: inline-block;
+                            width: auto;
+                        }
                     }
                     input {
                         margin: 0 10px 0 0;
+                        display: block;
+                        width: 100%;
+                        @media screen and (min-width: $tabwidth){
+                            display: inline-block;
+                            width: auto;
+                        }
                     }
                 }
             }

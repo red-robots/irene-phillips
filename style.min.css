@@ -776,9 +776,11 @@ h1,h2,h3,h4,h5,h6{font-family:"Oxygen",sans-serif}
 @media screen and (min-width:600px){.template-index>.row-2>.wrapper #bmi header h2{font-size:35px}
 }.template-index>.row-2>.wrapper #bmi .weight,.template-index>.row-2>.wrapper #bmi .height,.template-index>.row-2>.wrapper #bmi .result{margin:20px 0;font-size:16px}
 @media screen and (min-width:600px){.template-index>.row-2>.wrapper #bmi .weight,.template-index>.row-2>.wrapper #bmi .height,.template-index>.row-2>.wrapper #bmi .result{font-size:25px}
-}.template-index>.row-2>.wrapper #bmi .weight label,.template-index>.row-2>.wrapper #bmi .height label,.template-index>.row-2>.wrapper #bmi .result label{margin:0 10px 0 0}
-.template-index>.row-2>.wrapper #bmi .weight input,.template-index>.row-2>.wrapper #bmi .height input,.template-index>.row-2>.wrapper #bmi .result input{margin:0 10px 0 0}
-.template-index>.row-2>.wrapper .copy{font-size:16px;text-transform:uppercase}
+}.template-index>.row-2>.wrapper #bmi .weight label,.template-index>.row-2>.wrapper #bmi .height label,.template-index>.row-2>.wrapper #bmi .result label{margin:0 10px 0 0;display:block;width:100%}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper #bmi .weight label,.template-index>.row-2>.wrapper #bmi .height label,.template-index>.row-2>.wrapper #bmi .result label{display:inline-block;width:auto}
+}.template-index>.row-2>.wrapper #bmi .weight input,.template-index>.row-2>.wrapper #bmi .height input,.template-index>.row-2>.wrapper #bmi .result input{margin:0 10px 0 0;display:block;width:100%}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper #bmi .weight input,.template-index>.row-2>.wrapper #bmi .height input,.template-index>.row-2>.wrapper #bmi .result input{display:inline-block;width:auto}
+}.template-index>.row-2>.wrapper .copy{font-size:16px;text-transform:uppercase}
 @media screen and (min-width:600px){.template-index>.row-2>.wrapper .copy{font-size:25px}
 }.template-index>.row-3>.wrapper{padding:20px 0}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper{padding:2% 0 3% 0}
