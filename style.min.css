@@ -749,7 +749,8 @@ h1,h2,h3,h4,h5,h6{font-family:"Oxygen",sans-serif}
 }@media screen and (min-width:1200px){.template-index>.row-1>.wrapper>.col-1{width:25%}
 }.template-index>.row-1>.wrapper>.col-1 img{width:100%;display:block}
 .template-index>.row-1>.wrapper>.col-1 .name-with-certs{font-size:16px;margin:15px 0 0 0}
-@media screen and (min-width:900px){.template-index>.row-1>.wrapper>.col-1 .name-with-certs{font-size:25px}
+@media screen and (min-width:900px){.template-index>.row-1>.wrapper>.col-1 .name-with-certs{font-size:20px}
+}@media screen and (min-width:1300px){.template-index>.row-1>.wrapper>.col-1 .name-with-certs{font-size:25px}
 }.template-index>.row-1>.wrapper>.col-1 .email a{color:inherit;font-size:14px;text-decoration:none}
 @media screen and (min-width:900px){.template-index>.row-1>.wrapper>.col-1 .email a{font-size:16px}
 }.template-index>.row-1>.wrapper>.col-1 .email a:hover{color:#b2832b}
