@@ -17,6 +17,9 @@
                 text-align: center;
                 @media screen and (min-width: $tabwidth){
                     float: left;
+                    width: 40%;
+                }
+                @media screen and (min-width: $deskwidth){
                     width: 25%;
                 }
                 img {
@@ -26,7 +29,7 @@
                 .name-with-certs {
                     font-size: 16px;
                     margin: 15px 0 0 0;
-                    @media screen and (min-width: $tabwidth){
+                    @media screen and (min-width: $midwidth){
                         font-size: 25px;
                     }
 
@@ -34,8 +37,11 @@
                 .email {
                     a {
                         color: inherit;
-                        font-size: 16px;
+                        font-size: 14px;
                         text-decoration: none;
+                        @media screen and (min-width: $midwidth){
+                            font-size: 16px;
+                        }
                         &:hover {
                             color: $color__i-dark-yellow;
                         }
@@ -46,7 +52,7 @@
                         color: inherit;
                         text-decoration: none;
                         font-size: 16px;
-                        @media screen and (min-width: $tabwidth){
+                        @media screen and (min-width: $midwidth){
                             font-size: 25px;
                         }
                         &:hover {
@@ -58,6 +64,10 @@
             >.col-2 {
                 text-align: center;
                 @media screen and (min-width: $tabwidth){
+                    width: 60%;
+                    float: left;
+                }
+                @media screen and (min-width: $deskwidth){
                     width: 75%;
                     float: left;
                 }
@@ -72,6 +82,9 @@
                         font-weight: 500;
                         color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
+                            font-size: 40px;
+                        }
+                        @media screen and (min-width: $midwidth){
                             font-size: 60px;
                         }
                     }
@@ -86,6 +99,9 @@
                         font-weight: 500;
                         color: $color__i-dark-yellow;
                         @media screen and (min-width: $tabwidth){
+                            font-size: 30px;
+                        }
+                        @media screen and (min-width: $midwidth){
                             font-size: 35px;
                         }
                     }
