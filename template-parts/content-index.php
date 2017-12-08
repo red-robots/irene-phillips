@@ -28,12 +28,16 @@
                 <?php endif;
                 if($email):?>
                     <div class="email">
-                        <?php echo $email;?> 
+                        <a href="mailto:<?php echo $email;?>">
+                            <?php echo $email;?>
+                        </a> 
                     </div><!--.email-->
                 <?php endif;
                 if($phone):?>
                     <div class="phone">
-                        <?php echo $phone;?> 
+                        <a href="tel:+1<?php echo preg_replace('/[^0-9]/',"",$phone);?>">
+                            <?php echo $phone;?>
+                        </a>
                     </div><!--.phone-->
                 <?php endif;?>
             </div><!--.col-1-->
