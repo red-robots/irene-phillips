@@ -36,6 +36,9 @@
                         color: inherit;
                         font-size: 16px;
                         text-decoration: none;
+                        &:hover {
+                            color: $color__i-dark-yellow;
+                        }
                     }
                 }
                 .phone {
@@ -45,6 +48,9 @@
                         font-size: 16px;
                         @media screen and (min-width: $tabwidth){
                             font-size: 25px;
+                        }
+                        &:hover {
+                            color: $color__i-dark-yellow;
                         }
                     }
                 }
